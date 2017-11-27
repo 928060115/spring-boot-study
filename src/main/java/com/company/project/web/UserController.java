@@ -1,7 +1,5 @@
 package com.company.project.web;
-import com.company.project.core.exception.ServiceException;
 import com.company.project.core.result.Result;
-import com.company.project.core.result.ResultCode;
 import com.company.project.core.result.ResultGenerator;
 import com.company.project.model.User;
 import com.company.project.service.UserService;
@@ -16,7 +14,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
-* Created by CodeGenerator on 2017/08/21.
+* Created by CodeGenerator on 2017/11/27.
 */
 @RestController
 @RequestMapping("/user")
@@ -52,18 +50,7 @@ public class UserController {
     public Result list(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "0") Integer size) {
         PageHelper.startPage(page, size);
         List<User> list = userService.findAll();
-        PageInfo<User> pageInfo = new PageInfo<>(list);
+        PageInfo pageInfo = new PageInfo(list);
         return ResultGenerator.genSuccessResult(pageInfo);
-    }
-
-    @RequestMapping("/test")
-    public Result test(){
-        Result result=new Result();
-        return result.setCode(ResultCode.FAIL);
-    }
-
-    @RequestMapping("/e")
-    public Result e() throws ServiceException {
-        throw new ServiceException(ResultCode.INVALID_PARAM);
     }
 }

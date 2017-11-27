@@ -3,7 +3,7 @@ package com.company.project.model;
 import java.util.Date;
 import javax.persistence.*;
 
-public class User extends BaseDO{
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,6 +19,8 @@ public class User extends BaseDO{
 
     @Column(name = "register_date")
     private Date registerDate;
+
+    private String mobile;
 
     /**
      * @return id
@@ -102,5 +104,19 @@ public class User extends BaseDO{
      */
     public void setRegisterDate(Date registerDate) {
         this.registerDate = registerDate;
+    }
+
+    /**
+     * @return mobile
+     */
+    public String getMobile() {
+        return mobile;
+    }
+
+    /**
+     * @param mobile
+     */
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
