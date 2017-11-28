@@ -4,6 +4,8 @@ import com.alibaba.dubbo.config.annotation.Reference;
 
 
 import com.company.project.Tester;
+import com.company.project.core.service.dubbo.city.City;
+import com.company.project.core.service.dubbo.city.CityDubboService;
 import org.junit.Test;
 
 

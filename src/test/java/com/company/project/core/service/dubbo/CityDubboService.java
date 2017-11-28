@@ -1,6 +1,8 @@
 package com.company.project.core.service.dubbo;
 
 
+import com.company.project.core.service.dubbo.city.City;
+
 /**
  * 必须保证此接口所在的包与provider一致
  * 城市业务 Dubbo 服务层

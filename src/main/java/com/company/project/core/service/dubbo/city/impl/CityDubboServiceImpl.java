@@ -1,8 +1,8 @@
-package com.company.project.core.service.dubbo.impl;
+package com.company.project.core.service.dubbo.city.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.company.project.core.service.dubbo.City;
-import com.company.project.core.service.dubbo.CityDubboService;
+import com.company.project.core.service.dubbo.city.City;
+import com.company.project.core.service.dubbo.city.CityDubboService;
 
 
 /**

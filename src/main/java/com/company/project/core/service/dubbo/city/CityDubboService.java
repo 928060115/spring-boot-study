@@ -1,4 +1,4 @@
-package com.company.project.core.service.dubbo;
+package com.company.project.core.service.dubbo.city;
 
 /**
  * 城市业务 Dubbo 服务层

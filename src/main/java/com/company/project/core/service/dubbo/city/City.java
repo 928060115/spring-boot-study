@@ -1,4 +1,4 @@
-package com.company.project.core.service.dubbo;
+package com.company.project.core.service.dubbo.city;
 
 import com.company.project.model.BaseDO;
 
